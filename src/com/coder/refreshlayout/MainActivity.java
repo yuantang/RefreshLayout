@@ -8,9 +8,11 @@ import com.coder.refreshlayout.RefreshLayout.OnLoadListener;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.Dialog;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.HandlerThread;
 import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.view.View;
 import android.widget.ListView;
@@ -52,6 +54,10 @@ public class MainActivity extends Activity implements OnRefreshListener,OnLoadLi
 	}
 
 	private void initData() {
+		final Dialog dialog=new Dialog(this,R.style.lodingdialog);
+		dialog.setContentView(R.layout.layout_loding_dialog);
+		dialog.show();
+
 		for (int i = 0; i < 10; i++) {
 			Map<String, Object> listItem = new HashMap<>();
 			listItem.put("img", R.drawable.ic_launcher);
@@ -60,6 +66,14 @@ public class MainActivity extends Activity implements OnRefreshListener,OnLoadLi
 		}
 		mAdapter = new SimpleAdapter(this, mData, R.layout.list_item, new String[]{"img", "text"}, new int[]{R.id.img, R.id.text});
 		mListView.setAdapter(mAdapter);
+
+		new Handler().postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				dialog.dismiss(); 
+			}
+		}, 4000);
+
 	}
 
 	/**
@@ -130,5 +144,11 @@ public class MainActivity extends Activity implements OnRefreshListener,OnLoadLi
 	public void onLoad() {
 		simulateLoadingData();
 	}
+	@Override
+	protected void onDestroy() {
+		mRefresh.setRefreshing(false);
+		mRefresh.setLoading(false);
 
+		super.onDestroy();
+	}
 }

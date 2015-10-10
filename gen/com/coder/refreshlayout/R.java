@@ -1938,8 +1938,9 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020038;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
         public static final int abc_textfield_search_material=0x7f02003a;
-        public static final int ic_launcher=0x7f02003b;
-        public static final int ic_refresh=0x7f02003c;
+        public static final int corners_bg=0x7f02003b;
+        public static final int ic_launcher=0x7f02003c;
+        public static final int ic_refresh=0x7f02003d;
     }
     public static final class id {
         public static final int action_bar=0x7f090040;
@@ -1981,7 +1982,7 @@ containing a value of this type.
         public static final int icon=0x7f09002b;
         public static final int ifRoom=0x7f09001b;
         public static final int image=0x7f090028;
-        public static final int img=0x7f090054;
+        public static final int img=0x7f090056;
         public static final int list=0x7f090051;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f09002a;
@@ -1992,6 +1993,7 @@ containing a value of this type.
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
         public static final int parentPanel=0x7f09002d;
+        public static final int pb_loding=0x7f090054;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09003a;
@@ -2019,11 +2021,12 @@ containing a value of this type.
         public static final int submit_area=0x7f09004b;
         public static final int swipe_container=0x7f090050;
         public static final int tabMode=0x7f09000c;
-        public static final int text=0x7f090055;
+        public static final int text=0x7f090057;
         public static final int textSpacerNoButtons=0x7f090033;
         public static final int title=0x7f09002c;
         public static final int title_template=0x7f09002f;
         public static final int topPanel=0x7f09002e;
+        public static final int tv_dialog=0x7f090055;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
         public static final int withText=0x7f09001d;
@@ -2086,11 +2089,12 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030018;
         public static final int activity_main=0x7f030019;
         public static final int layout_footer=0x7f03001a;
-        public static final int list_item=0x7f03001b;
-        public static final int select_dialog_item_material=0x7f03001c;
-        public static final int select_dialog_multichoice_material=0x7f03001d;
-        public static final int select_dialog_singlechoice_material=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int layout_loding_dialog=0x7f03001b;
+        public static final int list_item=0x7f03001c;
+        public static final int select_dialog_item_material=0x7f03001d;
+        public static final int select_dialog_multichoice_material=0x7f03001e;
+        public static final int select_dialog_singlechoice_material=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -2164,11 +2168,13 @@ containing a value of this type.
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -2560,6 +2566,9 @@ containing a value of this type.
          */
         public static final int Widget_AppCompat_Toolbar=0x7f0b0042;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0043;
+        /**  自定义lodingdialog样式 
+         */
+        public static final int lodingdialog=0x7f0b011d;
     }
     public static final class styleable {
         /**  ============================================ 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="refresh">
+        <attr name="Color1" format="color" />
+        <attr name="Color2" format="color" />
+        <attr name="Color3" format="color" />
+        <attr name="Color4" format="color" />
+    </declare-styleable>
+
+</resources>
